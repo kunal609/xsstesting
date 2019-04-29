@@ -2,7 +2,7 @@
 
   <script>
     function() {
-      iframe.contentWindow.postMessage(this.message.value, '<script>alert(document.domain)</script>');
+      iframe.contentWindow.postMessage(this.message.value, '<svg onload=alert(document.domain)>');
       return false;
     };
   </script>
