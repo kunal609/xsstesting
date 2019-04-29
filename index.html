@@ -2,7 +2,7 @@
 
   <script>
     {
-      iframe.contentWindow.postMessage(this.message.value, '<svg onload=alert(document.domain)>');
+      iframe.contentWindow.postMessage('<svg onload=alert(document.domain)>');
     }
   </script>
 
