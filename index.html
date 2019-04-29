@@ -1,4 +1,1 @@
-<iframe id="frame" src="data:text/html,<script>alert(document.domain)</script>"></iframe>
-<script>
-document.getElementById("frame").message(alert(document.domain));
-</script>
+<iframe src="#" onload="frames[0].postMessage('<script>alert(document.domain)','*')">
