@@ -1,10 +1,9 @@
-<iframe src="#" id="iframe" style="display:block;height:60px" onload=function()></iframe>
+<iframe src="#" id="iframe" style="display:block;height:60px"></iframe>
 
   <script>
-    function() {
+    {
       iframe.contentWindow.postMessage(this.message.value, '<svg onload=alert(document.domain)>');
-      return false;
-    };
+    }
   </script>
 
 </body>
